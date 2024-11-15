@@ -8,6 +8,27 @@ importers:
 
   .: {}
 
+  packages/browser:
+    devDependencies:
+      '@tsconfig/node22':
+        specifier: ^22.0.0
+        version: 22.0.0
+      '@types/node':
+        specifier: ^22.9.0
+        version: 22.9.0
+      npm-run-all2:
+        specifier: ^7.0.1
+        version: 7.0.1
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
+
   packages/env:
     devDependencies:
       '@tsconfig/node22':
@@ -30,6 +51,10 @@ importers:
         version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
 
   packages/optimize:
+    dependencies:
+      '@jtis/type':
+        specifier: ^0.0.2
+        version: 0.0.2
     devDependencies:
       '@tsconfig/node22':
         specifier: ^22.0.0
@@ -51,6 +76,31 @@ importers:
         version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
 
   packages/type:
+    devDependencies:
+      '@tsconfig/node22':
+        specifier: ^22.0.0
+        version: 22.0.0
+      '@types/node':
+        specifier: ^22.9.0
+        version: 22.9.0
+      npm-run-all2:
+        specifier: ^7.0.1
+        version: 7.0.1
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
+
+  packages/utils:
+    dependencies:
+      '@jtis/type':
+        specifier: ^0.0.2
+        version: 0.0.2
     devDependencies:
       '@tsconfig/node22':
         specifier: ^22.0.0
@@ -210,6 +260,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@jtis/type@0.0.2':
+    resolution: {integrity: sha512-1/zANqguD7qc0noFfw2TQNzeCHTrDZxOC+dWobKQtGeXBHEXhjs7l2Ti4hdOutFcr4+WohKiNoN4CkffFfRA4w==}
 
   '@parcel/watcher-android-arm64@2.5.0':
     resolution: {integrity: sha512-qlX4eS28bUcQCdribHkg/herLe+0A9RyYC+mm2PXpncit8z5b3nSqGVzMNR3CmtAOgRutiZ02eIJJgP/b1iEFQ==}
@@ -669,6 +722,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@jtis/type@0.0.2': {}
 
   '@parcel/watcher-android-arm64@2.5.0':
     optional: true

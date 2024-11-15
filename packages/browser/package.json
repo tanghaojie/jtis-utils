@@ -1,16 +1,16 @@
 {
-  "name": "@jtis/optimize",
+  "name": "@jtis/browser",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
-  "main": "./dist/optimize.umd.cjs",
-  "module": "./dist/optimize.js",
+  "main": "./dist/browser.umd.cjs",
+  "module": "./dist/browser.js",
   "exports": {
     ".": {
-      "import": "./dist/optimize.js",
-      "require": "./dist/optimize.umd.cjs"
+      "import": "./dist/browser.js",
+      "require": "./dist/browser.umd.cjs"
     }
   },
   "types": "./dist/types/index.d.ts",
@@ -21,6 +21,7 @@
     "build": "vite build && vue-tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist/types",
     "publishToNpm": "npm version patch && npm publish"
   },
+  "dependencies": {},
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.9.0",
@@ -28,8 +29,5 @@
     "prettier": "^3.3.3",
     "typescript": "~5.6.3",
     "vite": "^5.4.10"
-  },
-  "dependencies": {
-    "@jtis/type": "^0.0.2"
   }
 }

@@ -1,11 +1,10 @@
 {
-  "name": "@jtis",
+  "name": "jtis",
   "private": true,
-  "version": "0.0.1",
-  "packageManager": "pnpm@*",
+  "packageManager": "pnpm@9.0.0",
   "license": "MIT",
   "author": "Jackie Tang",
-  "repository": "https://github.com/tanghaojie/WordCloudTunnel",
+  "repository": "https://github.com/tanghaojie/jtis-utils",
   "scripts": {
     "build-all": "pnpm run -C packages/type build && pnpm run -C packages/env build",
     "publish-all": "pnpm run -C packages/type publishToNpm && pnpm run -C packages/env publishToNpm"

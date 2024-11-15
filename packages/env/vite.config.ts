@@ -7,5 +7,6 @@ export default defineConfig({
       entry: resolve(__dirname, './src/index.ts'),
       name: 'env',
     },
+    sourcemap: true,
   },
 })

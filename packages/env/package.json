@@ -1,7 +1,7 @@
 {
   "name": "@jtis/env",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
@@ -16,7 +16,7 @@
   "types": "./dist/types/index.d.ts",
   "license": "MIT",
   "author": "Jackie Tang",
-  "repository": "https://github.com/tanghaojie",
+  "repository": "https://github.com/tanghaojie/jtis-utils",
   "scripts": {
     "build": "vite build && vue-tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist/types",
     "publishToNpm": "npm version patch && npm publish"

@@ -8,5 +8,6 @@ export default defineConfig({
       name: 'type',
       fileName: 'type',
     },
+    sourcemap: true,
   },
 })

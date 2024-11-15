@@ -1,16 +1,16 @@
 {
-  "name": "@jtis/optimize",
+  "name": "@jtis/utils",
   "type": "module",
   "version": "0.0.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/optimize.umd.cjs",
-  "module": "./dist/optimize.js",
+  "main": "./dist/utils.umd.cjs",
+  "module": "./dist/utils.js",
   "exports": {
     ".": {
-      "import": "./dist/optimize.js",
-      "require": "./dist/optimize.umd.cjs"
+      "import": "./dist/utils.js",
+      "require": "./dist/utils.umd.cjs"
     }
   },
   "types": "./dist/types/index.d.ts",
@@ -19,7 +19,11 @@
   "repository": "https://github.com/tanghaojie/jtis-utils",
   "scripts": {
     "build": "vite build && vue-tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist/types",
-    "publishToNpm": "npm version patch && npm publish"
+    "publishToNpm": "npm version patch && npm publish",
+    "dev": "npx tsx ./dev/index.ts"
+  },
+  "dependencies": {
+    "@jtis/type": "^0.0.2"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
@@ -28,8 +32,5 @@
     "prettier": "^3.3.3",
     "typescript": "~5.6.3",
     "vite": "^5.4.10"
-  },
-  "dependencies": {
-    "@jtis/type": "^0.0.2"
   }
 }
