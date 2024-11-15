@@ -6,7 +6,7 @@
   "author": "Jackie Tang",
   "repository": "https://github.com/tanghaojie/jtis-utils",
   "scripts": {
-    "build-all": "pnpm run -C packages/type build && pnpm run -C packages/env build",
-    "publish-all": "pnpm run -C packages/type publishToNpm && pnpm run -C packages/env publishToNpm"
+    "build-all": "pnpm run -C packages/browser build && pnpm run -C packages/env build && pnpm run -C packages/optimize build && pnpm run -C packages/type build && pnpm run -C packages/utils build",
+    "publish-all": "pnpm run -C packages/browser publishToNpm && pnpm run -C packages/env publishToNpm && pnpm run -C packages/optimize publishToNpm && pnpm run -C packages/type publishToNpm && pnpm run -C packages/utils publishToNpm"
   }
 }
