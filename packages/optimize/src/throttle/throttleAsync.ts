@@ -1,10 +1,10 @@
-import type { SyncFunctionType } from '@jtis/type'
+import type { AsyncFunctionType } from '@jtis/type'
 
 /**
  * 节流-高频变间隔执行
  */
 export function throttleAsync<R = any>(
-  fn: SyncFunctionType<R>,
+  fn: AsyncFunctionType<R>,
   n = 100,
   immediate?: boolean
 ): (...args: any[]) => Promise<R> {

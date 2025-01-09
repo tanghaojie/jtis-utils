@@ -23,7 +23,11 @@ export function isFunction(val: unknown): val is Function {
 }
 
 export function isObject(val: unknown): val is Record<any, any> {
-  return val !== null && typeof val === 'object'
+  return !isNull(val) && !isUndef(val) && typeof val === 'object'
+}
+
+export function isObjectNotArray(val: unknown): val is Record<any, any> {
+  return !isArray(val) && isObject(val)
 }
 
 export function isRegExp(val: any): val is RegExp {
@@ -60,6 +64,10 @@ export function isSymbol(val: unknown): val is symbol {
 
 export function isNumber(val: unknown): val is number {
   return typeof val === 'number' && isFinite(val)
+}
+
+export function isNumberStr(val: unknown): val is string {
+  return isString(val) && isFinite(Number(val))
 }
 
 export function isBigInt(val: unknown): val is BigInt {
