@@ -17,6 +17,9 @@
   "license": "MIT",
   "author": "Jackie Tang",
   "repository": "https://github.com/tanghaojie/jtis-utils",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "vite build && vue-tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist/types",
     "publishToNpm": "npm version patch && npm publish"

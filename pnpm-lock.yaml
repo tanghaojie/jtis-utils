@@ -54,7 +54,57 @@ importers:
         specifier: ^5.4.10
         version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
 
+  packages/gis:
+    dependencies:
+      '@jtis/type':
+        specifier: ^0.0.2
+        version: 0.0.2
+    devDependencies:
+      '@tsconfig/node22':
+        specifier: ^22.0.0
+        version: 22.0.0
+      '@types/node':
+        specifier: ^22.9.0
+        version: 22.9.0
+      npm-run-all2:
+        specifier: ^7.0.1
+        version: 7.0.1
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
+
   packages/optimize:
+    dependencies:
+      '@jtis/type':
+        specifier: ^0.0.2
+        version: 0.0.2
+    devDependencies:
+      '@tsconfig/node22':
+        specifier: ^22.0.0
+        version: 22.0.0
+      '@types/node':
+        specifier: ^22.9.0
+        version: 22.9.0
+      npm-run-all2:
+        specifier: ^7.0.1
+        version: 7.0.1
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: ~5.6.3
+        version: 5.6.3
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10(@types/node@22.9.0)(sass@1.80.6)
+
+  packages/template:
     dependencies:
       '@jtis/type':
         specifier: ^0.0.2

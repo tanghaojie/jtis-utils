@@ -1,16 +1,16 @@
 {
-  "name": "@jtis/browser",
+  "name": "@jtis/gis",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/browser.umd.cjs",
-  "module": "./dist/browser.js",
+  "main": "./dist/gis.umd.cjs",
+  "module": "./dist/gis.js",
   "exports": {
     ".": {
-      "import": "./dist/browser.js",
-      "require": "./dist/browser.umd.cjs"
+      "import": "./dist/gis.js",
+      "require": "./dist/gis.umd.cjs"
     }
   },
   "types": "./dist/types/index.d.ts",
@@ -24,9 +24,6 @@
     "build": "vite build && vue-tsc src/index.ts --emitDeclarationOnly --declaration --declarationDir dist/types",
     "publishToNpm": "npm version patch && npm publish"
   },
-  "dependencies": {
-    "html2canvas": "^1.4.1"
-  },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.9.0",
@@ -34,5 +31,8 @@
     "prettier": "^3.3.3",
     "typescript": "~5.6.3",
     "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "@jtis/type": "^0.0.2"
   }
 }
